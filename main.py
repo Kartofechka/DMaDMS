@@ -6,7 +6,7 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, sess
 
 # Создание подключения к БД:   'Тип_БД+драйвер://пользователь:пароль@хост/имя_БД?driver=ODBC+driver+17+for+SQL+Server'
 
-database_url = "mssql+pyodbc://yzsr31:Potato@10.100.0.6\\MIWN36/yzsr31?driver=ODBC+Driver+17+for+SQL+Server"
+database_url = "mssql+pyodbc://:@10.100.0.6\\MIWN36/yzsr31?driver=ODBC+Driver+17+for+SQL+Server"
 engine = create_engine(database_url, echo=True)
 
 class Base(DeclarativeBase):
